@@ -1,0 +1,62 @@
+html {
+  font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: 'Quicksand', sans-serif; 
+  background: linear-gradient(110deg, #1d1e22 60%, #393f4d 60%);
+  color: white;
+}
+
+h1 {
+  padding-top: 10px;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 3px 3px 1px black;
+}
+
+p {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.img-column {
+  float: left;
+  width: 27%;
+  padding: 0 auto;
+}
+
+/* Clear floats after image containers */
+.imgs-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.block {
+  margin-top: 75px;
+  margin-bottom: 45px;
+  margin-left: 370px;
+}
+
+
+a:link, a:visited {
+  border-radius: 25px;
+  background-color: #2365b7;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+a:hover, a:active {
+  color: #2365b7;
+  background-color: white;
+}
