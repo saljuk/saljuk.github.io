@@ -1,0 +1,248 @@
+html {
+    font-family: 'Questrial', sans-serif;
+    background-color: #2D3784;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+    width: 100%;
+    align-content: right;
+    background-color: #F7AC41 ;
+}
+
+.navbar-links {
+    float: right;
+    color: white;
+}
+
+.navbar-links:hover{
+    color: rgb(230, 219, 204);
+
+}
+
+img {
+    height: 300px;
+    width: 170px;
+}
+
+.splash {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    top: 3em;
+}
+
+.splash-link, .splash-link:visited, #landingLink {
+    background-color: #F7AC41;
+    border-radius: 40px;
+    color: white;
+}
+
+
+.splash-link:hover, #landingLink:hover {
+    background-color: white;
+    color: #2D3784;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+
+.landing {
+    position: relative;
+    margin: 0 auto;
+    text-align: justify;
+    top: 10em;
+    width: 1000px;
+    line-height: 1.7em;
+}
+
+#landingLink {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.formHeadings {
+    border-top: #F7AC41 solid 1px;
+    border-bottom: #F7AC41 solid 1px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+input {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 25%;
+    text-align: center;
+}
+
+.formSection {
+    margin-left: 10px;
+    line-height: 10px;
+}
+
+#submit {
+    background-color: #F7AC41;
+    color: white;
+    border: none;
+    margin-bottom: 3em;
+    text-align: center;
+    width: 10%;
+}       
+
+.formSection h5 {
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+.formSection h6 {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+td {
+    border-right: #F7AC41 solid 1px;
+    text-align: center;
+}
+
+#year {
+    width: 10%;
+
+}
+
+#city {
+    width: 10%;
+}
+
+form {
+    position: relative;
+    margin: 0 auto;
+    top: 1.75em;
+}
+
+.formTitle {
+    font-size: 48px;
+    text-align: center;
+}
+
+#submit:hover {
+    background-color: white;
+    color: #2D3784;
+}
+
+#SAT, #ACT, #Both, #accepted, #waitlisted, #denied {
+    width: 3%;
+}
+
+#sat-english, #sat-math, #sat-essay, #act-composite, #act-english, #act-math, #act-reading, #act-science, #sat2-score {
+    width: 5%;
+}
+
+#sat2-subject {
+    width: 10%;
+}
+
+footer {
+    background-color: #F7AC41;
+    text-align: center;
+    padding: 0.25%;
+    width: 100%;
+}
+
+.construction {
+    text-align: center;
+}
+
+.constructSection {
+    position: relative;
+    top: 10em;
+}
+
+.constructSection img {
+    float: right;
+    width: 21%;
+}
+
+.meet {
+    text-align: center;
+}
+
+.shah img, .saljuk img {
+    width: 15em;
+    height: 15em;
+}
+
+.aboutSection {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.aboutSection .personText {
+    padding: 2em;
+    text-align: justify;
+}
+
+#saljukText {
+    text-align: right;
+}
+
+#plus, #minus {
+    font-size: 35px;
+    color: white;
+}
+
+#plus:hover, #minus:hover{
+    color: #F7AC41;
+}
+
+#minus {
+    margin-left: 1em;
+}
+
+#plus {
+    margin-left: 1em;
+}
+.uniListings {
+     width: 50%;
+}
+
+#unis-applied {
+    width: 75%;
+}
+
+.uniListings thead {
+    line-height: 50px;
+    background-color: #F7AC41;
+}
+
+
+.uniListings {
+    border: #F7AC41 1px solid;
+    width: 75%;
+}
+
+.uniListings td {
+    border: none;
+}
+
+#numbercolleges {
+    width: 7em;
+}
