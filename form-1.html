@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Form Page</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="./index.html" class="navbar-links">Home</a>
+        <a href="./about.html" class="navbar-links">About Us</a>
+        <a href="./construction.html" class="navbar-links">The Process</a>
+    </div>
+    <form name='submit-to-google-sheet'>
+        <h2 class="formTitle">Applicant Data Form</h2>
+        <div class="formHeadings">
+            <span id="heading">Personal Details</span>
+            <span class="formProgress">1/4</span>
+        </div>
+        <div class="formSection">
+
+            <p><em>* Note: These details are only being asked for our record-keeping purposes.
+                    Rest-assured, our tool will represent your academic data anonymously.</em>
+            </p>
+            <label for="full-name">
+                Full Name:
+                <input id="full-name" name="full-name" type="text" placeholder="Insert Full Name Here" required>
+            </label>
+            <br>
+            <br>
+            <label for="email">
+                Email:
+                <input id="email" name="email" type="text" placeholder="john@gmail.com" required>
+            </label>
+            <br>
+            <br>
+            <label for="uni-attended">
+                University you are attending/attended (if not found in list, feel free to type it in):
+                <input id="uni-attended" name="uni-attended" type="text" list="unis" placeholder="X University"
+                    required>
+                <datalist id="unis">
+                    <option value="Allegheny College"></option>
+                    <option value="Amherst College"></option>
+                    <option value="Bard College"></option>
+                    <option value="Barnard College"></option>
+                    <option value="Bates College"></option>
+                    <option value="Beloit College"></option>
+                    <option value="Boston College"></option>
+                    <option value="Boston University"></option>
+                    <option value="Bowdoin College"></option>
+                    <option value="Brandeis University"></option>
+                    <option value="Brown University"></option>
+                    <option value="Bryn Mawr College"></option>
+                    <option value="Bucknell University"></option>
+                    <option value="California Institute of Technology"></option>
+                    <option value="Carleton College"></option>
+                    <option value="Carnegie Mellon University"></option>
+                    <option value="Claremont McKenna College"></option>
+                    <option value="Colby College"></option>
+                    <option value="Colgate University"></option>
+                    <option value="College of William and Mary"></option>
+                    <option value="Colorado College"></option>
+                    <option value="Columbia University"></option>
+                    <option value="Connecticut College"></option>
+                    <option value="Cornell University"></option>
+                    <option value="Dartmouth College"></option>
+                    <option value="Davidson College"></option>
+                    <option value="Denison University"></option>
+                    <option value="DePauw University"></option>
+                    <option value="Duke University"></option>
+                    <option value="Emory University"></option>
+                    <option value="Franklin and Marshall College"></option>
+                    <option value="George Washington University"></option>
+                    <option value="Georgetown University"></option>
+                    <option value="Georgia Institute of Technology"></option>
+                    <option value="Grinnell College"></option>
+                    <option value="Hamilton College"></option>
+                    <option value="Harvard University"></option>
+                    <option value="Harvey Mudd College"></option>
+                    <option value="Haverford College"></option>
+                    <option value="Illinois Wesleyan University"></option>
+                    <option value="Johns Hopkins University"></option>
+                    <option value="Kenyon College"></option>
+                    <option value="Knox College"></option>
+                    <option value="Lafayette College"></option>
+                    <option value="Lake Forest College"></option>
+                    <option value="Lawrence University"></option>
+                    <option value="Lehigh University"></option>
+                    <option value="Macalester College"></option>
+                    <option value="Massachusetts Institute of Technology"></option>
+                    <option value="Middlebury College"></option>
+                    <option value="Mount Holyoke College"></option>
+                    <option value="New York University Abu Dhabi Campus"></option>
+                    <option value="New York University New York Campus"></option>
+                    <option value="New York University Shanghai Campus"></option>
+                    <option value="Northeastern University"></option>
+                    <option value="Northwestern University"></option>
+                    <option value="Oberlin College"></option>
+                    <option value="Occidental College"></option>
+                    <option value="Pennsylvania State University-University Park"></option>
+                    <option value="Pepperdine University"></option>
+                    <option value="Pitzer College"></option>
+                    <option value="Pomona College"></option>
+                    <option value="Princeton University"></option>
+                    <option value="Reed College"></option>
+                    <option value="Rice University"></option>
+                    <option value="Rutgers University-New Brunswick"></option>
+                    <option value=" Sarah Lawrence College"></option>
+                    <option value="Scripps College"></option>
+                    <option value="Skidmore College"></option>
+                    <option value="Smith College"></option>
+                    <option value="St. Lawrence University"></option>
+                    <option value="Stanford University"></option>
+                    <option value="Swarthmore College"></option>
+                    <option value="Syracuse University"></option>
+                    <option value="Texas A&M University-College Station"></option>
+                    <option value="Trinity College"></option>
+                    <option value="Tufts University"></option>
+                    <option value="Tulane University"></option>
+                    <option value="Union College"></option>
+                    <option value="University of California-Berkeley"></option>
+                    <option value="University of California-Davis"></option>
+                    <option value="University of California-Irvine"></option>
+                    <option value="University of California-Los Angeles"></option>
+                    <option value="University of California-San Diego"></option>
+                    <option value="University of California-Santa Barbara"></option>
+                    <option value="University of Chicago"></option>
+                    <option value="University of Florida"></option>
+                    <option value="University of Georgia"></option>
+                    <option value="University of Illinois-Urbana-Champaign"></option>
+                    <option value="University of Miami"></option>
+                    <option value="University of Michigan-Ann Arbor"></option>
+                    <option value="University of North Carolina-Chapel Hill"></option>
+                    <option value="University of Pennsylvania"></option>
+                    <option value="University of Richmond"></option>
+                    <option value="University of Rochester"></option>
+                    <option value="University of Southern California"></option>
+                    <option value="University of Texas-Austin"></option>
+                    <option value="University of Washington"></option>
+                    <option value="University of Wisconsin-Madison"></option>
+                    <option value="Vanderbilt University"></option>
+                    <option value="Vassar College"></option>
+                    <option value="Villanova University"></option>
+                    <option value="Wake Forest University"></option>
+                    <option value="Washington and Lee University"></option>
+                    <option value="Washington University in St. Louis"></option>
+                    <option value="Wellesley College"></option>
+                    <option value="Wesleyan University"></option>
+                    <option value="Whitman College"></option>
+                    <option value="Williams College"></option>
+                    <option value="Worcester Polytechnic Institute"></option>
+                    <option value="Yale University"></option>
+                    <option value="Yale-NUS"></option>
+                </datalist>
+            </label>
+        </div>
+
+        <br>
+
+        <div class="formHeadings">
+            <span id="heading">Background</span>
+            <span class="formProgress">2/4</span>
+        </div>
+        <div class="formSection">
+
+            <label for="year">
+                Year you applied:
+                <input id="year" name="year-you-applied" type="number" pattern="[0-9]" min="1950" max="2025" required
+                    placeholder="2019">
+            </label>
+            <br>
+            <br>
+            <label for="high-school">
+                High School you applied from (if not found in list, feel free to type it in):
+                <input id="high-school" name="high-school" list="high-schools" type="text" required
+                    placeholder="High School Name">
+                <datalist id="high-schools">
+                    <option value="Aitchison College"></option>
+                    <option value="Angels International College Fasialabad"></option>
+                    <option value="Beaconhouse Canal Side Campus Lahore"></option>
+                    <option value="Beaconhouse Defence Lahore"></option>
+                    <option value="Beaconhouse Gulberg Lahore"></option>
+                    <option value="Beaconhouse Johar Town Lahore"></option>
+                    <option value="Beaconhouse Liberty Campus Lahore"></option>
+                    <option value="Cedar College Karachi"></option>
+                    <option value="City School Ravi Campus Lahore"></option>
+                    <option value="City School Shalimar Campus Lahore"></option>
+                    <option value="Convent of Jesus and Mary Lahore"></option>
+                    <option value="Headstart Islamabad"></option>
+                    <option value="Karachi Grammar School"></option>
+                    <option value="Lahore Grammar School 1-A/1"></option>
+                    <option value="Lahore Grammar School 55 Main"></option>
+                    <option value="Lahore Grammar School Defence (Phase 1)"></option>"
+                    <option value="Lahore Grammar School Islamabad"></option>
+                    <option value="Lahore Grammar School Johar Town"></option>
+                    <option value="Lahore Grammar School Model Town"></option>
+                    <option value="Lahore Grammar School Phase V"></option>
+                    <option value="Nixor College Karachi"></option>
+                    <option value="Sadiq Public School Bahawalpur"></option>
+                </datalist>
+            </label>
+            <br>
+            <br>
+            <label for="city">
+                City you applied from (if not found in list, feel free to type it in):
+                <input id="city" name="city" list="cities" type="text" required placeholder="City Name">
+                <datalist id="cities">
+                    <option value="Fasialabad"></option>
+                    <option value="Islamabad"></option>
+                    <option value="Karachi"></option>
+                    <option value="Lahore"></option>
+                </datalist>
+            </label>
+            </label>
+        </div>
+
+        <div class="formHeadings">
+            <span id="heading">Academic Details</span>
+            <span class="formProgress">3/4</span>
+        </div>
+        <div class="formSection">
+
+            <h5>Cambridge O'Level Grades</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>No. of A*s/As</td>
+                        <td>No. of Bs</td>
+                        <td>No. of Cs</td>
+                        <td>No. of Ds</td>
+                        <td>No. of Es</td>
+                        <td>No. of Us</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" name="olevelAs" id="olevelAs" min="0" value="0"></td>
+                        <td><input type="number" name="olevelBs" id="olevelBs" min="0" value="0"></td>
+                        <td><input type="number" name="olevelCs" id="olevelCs" min="0" value="0"></td>
+                        <td><input type="number" name="olevelDs" id="olevelDs" min="0" value="0"></td>
+                        <td><input type="number" name="olevelEs" id="olevelEs" min="0" value="0"></td>
+                        <td><input type="number" name="olevelUs" id="olevelUs" min="0" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>A1 Final Grades</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>No. of A*s/As</td>
+                        <td>No. of Bs</td>
+                        <td>No. of Cs</td>
+                        <td>No. of Ds</td>
+                        <td>No. of Es</td>
+                        <td>No. of Us</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="number" name="aslevelAs" id="aslevelAs" min="0" value="0"></td>
+                        <td><input type="number" name="aslevelBs" id="aslevelBs" min="0" value="0"></td>
+                        <td><input type="number" name="aslevelCs" id="aslevelCs" min="0" value="0"></td>
+                        <td><input type="number" name="aslevelDs" id="aslevelDs" min="0" value="0"></td>
+                        <td><input type="number" name="aslevelEs" id="aslevelEs" min="0" value="0"></td>
+                        <td><input type="number" name="aslevelUs" id="aslevelUs" min="0" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>SAT 1/ACT</h5>
+            <p>Did you take the SAT, the ACT or both?</p>
+            <label for="SAT">
+                SAT
+                <input id="SAT" name="satoract" type="radio" value="SAT">
+            </label>
+            <label for="ACT">
+                ACT
+                <input id="ACT" name="satoract" type="radio" value="ACT">
+            </label>
+            <label for="Both">
+                Both
+                <input id="Both" name="satoract" type="radio" value="Both">
+            </label>
+            <br>
+            <div id='satDetails'>
+                <h6>SAT 1 Score (Please report highest score in each individual section)</h6>
+                <label for="sat-english">
+                    English:
+                    <input type="number" id="sat-english" name="sat-english" min="200" max="800" step="10">
+                </label>
+                <label for="sat-math">
+                    Math:
+                    <input type="number" id="sat-math" name="sat-math" min="200" max="800" step="10">
+                </label>
+                <label for="sat-essay">
+                    Essay:
+                    <input type="number" id="sat-essay" name="sat-essay" min="0" max="24">
+                </label>
+            </div>
+
+            <div id='actDetails'>
+                <h6>ACT Score (Please report highest score in each individual section)</h6>
+                <label for="act-composite">
+                    Composite:
+                    <input type="number" id="act-composite" name="act-composite" min="0" max="36">
+                </label>
+                <br>
+                <br>
+                <label for="act-english">
+                    English:
+                    <input type="number" id="act-english" name="act-english" min="0" max="36">
+                </label>
+                <label for="act-math">
+                    Math:
+                    <input type="number" id="act-math" name="act-math" min="0" max="36">
+                </label>
+                <label for="act-reading">
+                    Reading:
+                    <input type="number" id="act-reading" name="act-reading" min="0" max="36">
+                </label>
+                <label for="act-science">
+                    Science:
+                    <input type="number" id="act-science" name="act-science" min="0" max="36">
+                </label>
+            </div>
+
+            <h5>SAT 2 Scores</h5>
+            <span class="plus" id="addsat2">+</span>
+            <span class="minus" id="removesat2">-</span>
+            <br>
+            <br>
+            <br>
+            <div class="sat-2" id="firstsat2">
+                <label for="sat2-subject">
+                    Subject:
+                    <input id="sat2-subject" name="firstsat2-subject" list="subjects" type="text" value=null>
+                    <datalist id="subjects">
+                        <option value="Biology (Ecological)"></option>
+                        <option value="Biology (Molecular)"></option>
+                        <option value="Chemistry"></option>
+                        <option value="Physics"></option>
+                        <option value="U.S. History"></option>
+                        <option value="World History"></option>
+                        <option value="Literature"></option>
+                        <option value="Math Level 1"></option>
+                        <option value="Math Level 2"></option>
+                        <option value=null></option>
+                    </datalist>
+                </label>
+                <label for="sat2-score">
+                    Score:
+                    <input id="sat2-score" name="firstsat2-score" type="number" max="800" min="0" step="10" value=0>
+                </label>
+            </div>
+            <div class="sat-2" id="secondsat2">
+                <label for="sat2-subject">
+                    Subject:
+                    <input id="sat2-subject" name="secondsat2-subject" list="subjects" type="text" value=null>
+                    <datalist id="subjects">
+                        <option value="Biology (Ecological)"></option>
+                        <option value="Biology (Molecular)"></option>
+                        <option value="Chemistry"></option>
+                        <option value="Physics"></option>
+                        <option value="U.S. History"></option>
+                        <option value="World History"></option>
+                        <option value="Literature"></option>
+                        <option value="Math Level 1"></option>
+                        <option value="Math Level 2"></option>
+                        <option value=null></option>
+                    </datalist>
+                </label>
+                <label for="sat2-score">
+                    Score:
+                    <input id="sat2-score" name="secondsat2-score" type="number" max="800" min="0" step="10" value=0>
+                </label>
+            </div>
+            <div class="sat-2" id="thirdsat2">
+                <label for="sat2-subject">
+                    Subject:
+                    <input id="sat2-subject" name="thirdsat2-subject" list="subjects" type="text" value=null>
+                    <datalist id="subjects">
+                        <option value="Biology (Ecological)"></option>
+                        <option value="Biology (Molecular)"></option>
+                        <option value="Chemistry"></option>
+                        <option value="Physics"></option>
+                        <option value="U.S. History"></option>
+                        <option value="World History"></option>
+                        <option value="Literature"></option>
+                        <option value="Math Level 1"></option>
+                        <option value="Math Level 2"></option>
+                        <option value=null></option>
+                    </datalist>
+                </label>
+                <label for="sat2-score">
+                    Score:
+                    <input id="sat2-score" name="thirdsat2-score" type="number" max="800" min="0" step="10" value=0>
+                </label>
+            </div>
+            <div class="sat-2" id="fourthsat2">
+                <label for="sat2-subject">
+                    Subject:
+                    <input id="sat2-subject" name="fourthsat2-subject" list="subjects" type="text" value=null>
+                    <datalist id="subjects">
+                        <option value="Biology (Ecological)"></option>
+                        <option value="Biology (Molecular)"></option>
+                        <option value="Chemistry"></option>
+                        <option value="Physics"></option>
+                        <option value="U.S. History"></option>
+                        <option value="World History"></option>
+                        <option value="Literature"></option>
+                        <option value="Math Level 1"></option>
+                        <option value="Math Level 2"></option>
+                        <option value=null></option>
+                    </datalist>
+                </label>
+                <label for="sat2-score">
+                    Score:
+                    <input id="sat2-score" name="fourthsat2-score" type="number" max="800" min="0" step="10" value=0>
+                </label>
+            </div>
+            <div class="sat-2" id="fifthsat2">
+                <label for="sat2-subject">
+                    Subject:
+                    <input id="sat2-subject" name="fifthsat2-subject" list="subjects" type="text" value=null>
+                    <datalist id="subjects">
+                        <option value="Biology (Ecological)"></option>
+                        <option value="Biology (Molecular)"></option>
+                        <option value="Chemistry"></option>
+                        <option value="Physics"></option>
+                        <option value="U.S. History"></option>
+                        <option value="World History"></option>
+                        <option value="Literature"></option>
+                        <option value="Math Level 1"></option>
+                        <option value="Math Level 2"></option>
+                        <option value=null></option>
+                    </datalist>
+                </label>
+                <label for="sat2-score">
+                    Score:
+                    <input id="sat2-score" name="fifthsat2-score" type="number" max="800" min="0" step="10" value=0>
+                </label>
+            </div>
+            <br>
+            <br>
+        </div>
+
+        <div class="formHeadings">
+            <span id="heading">Application Details</span>
+            <span class="formProgress">4/4</span>
+        </div>
+        <div class="formSection">
+
+            <label for="numbercolleges">
+                Enter the number of Colleges/Universities you applied to <em>(Note: changing this later will reset all entries in this section)</em>:
+                <input type="number" name="numbercolleges" id="numbercolleges" min="0" max="25">
+            </label>
+
+            <br>
+            <br>
+
+            <div id="hide">
+                <table class="uniListings" id="uniTable">
+                    <thead id="headoflistings">
+                        <tr>
+                            <td>College/University you applied to:</td>
+                            <td colspan="3">Result</td>
+                    </thead>
+                    <tbody id="repeatedRow">
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        <br>
+        <div class="submitSection">
+            <input type="submit" id="submit">
+        </div>
+
+        <br>
+        <footer>
+            <p>* Submission of this form means that the applicant gives consent to the
+                makers of <em>Kya Scope Hai?</em> to use their application data for data analytics *
+            </p>
+        </footer>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="formscript.js"> </script>
+</body>
+
+</html>
