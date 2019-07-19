@@ -1,0 +1,399 @@
+html {
+    font-family: 'Questrial', sans-serif;
+    background-color:white;
+    color:black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#mobilebar {
+    display: none;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 25, 0.2), 0 6px 20px 0 rgba(26, 26, 25, 0.19);
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+    width: 100%;
+    align-content: right;
+    background-color: rgb(26, 26, 25);
+    position: fixed;
+    top: 0;
+}
+
+.navbar-links {
+    float: right;
+    color: white;
+    font-size: 18px;
+    margin-top: 0.75em;
+}
+
+.navbar-links:hover{
+    color: rgb(109, 108, 108);
+
+}
+
+.formHeadings #heading {
+    float: left;
+}
+
+.formHeadings .formProgress {
+    float: right;
+    margin-right: 0.5em;
+}
+
+.failurePage h1 {
+    font-size: 50px;
+}
+
+#booyah, #oops {
+    color: rgb(222, 67, 96);
+}
+
+.splash {
+    position: relative;
+    top: 9em;
+}
+
+.splashimage img {
+    float: left;
+    width: 43%;
+    height: 43%;
+    margin-left: 2em;
+}
+
+.splash-link, .splash-link:visited, #landingLink {
+    background-color: rgb(46, 186, 139);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+
+
+#landingLink:hover, #submit:hover {
+    background-color:white;
+    color: rgb(46, 186, 139);
+}
+
+.splash-link:hover {
+    background-color: white;
+    color: rgb(46, 186, 139);
+}
+
+.splashtext {
+    margin-top: 3em;
+    float: right;
+    margin-right: 0em;
+    padding: 5em;
+    background-color: rgb(26, 26, 25);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 25, 0.5), 0 6px 20px 0 rgba(26, 26, 25, 0.4);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 20px;
+}
+
+.triangle-right {
+    top: 7em;
+    margin-left: 50%;
+	width: 0;
+	height: 0;
+	border-top: 100px solid transparent;
+	border-left: 200px solid rgb(222, 67, 96);
+    border-bottom: 100px solid transparent;
+    position: fixed;
+}
+
+.landing {
+    position: relative;
+    margin: 0 auto;
+    text-align: justify;
+    top: 9em;
+    width: 55em;
+    line-height: auto;
+}
+
+#landingLink {
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.formHeadings  {
+    background-color: rgb(222, 67, 96);
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    height: 1em;
+}
+
+.formbody {
+    margin: 0 auto;
+    width: 70%;
+    border-left: black;
+    border-right: black;
+    padding: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.landing h1 {
+    font-size: 30px;
+}
+
+.landing h2 {
+    font-size: 20px;
+}
+
+.landing a, .splashheadings a {
+    margin: 0 auto;
+}
+
+#secondlinksplash {
+    margin-left: 2em;
+}
+
+
+input {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 25%;
+    text-align: center;
+    background-color: rgb(240, 239, 239);
+}
+
+
+.formSection {
+    margin-left: 10px;
+    line-height: 10px;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(42, 9, 158);
+    border-radius: 50%;
+    margin-left: 87%;
+    margin-top: 29%;
+    position: fixed;
+    z-index: 10;
+  }
+
+#submit {
+    background-color: rgb(46, 186, 139);
+    color: white;
+    border: none;
+    margin-bottom: 3em;
+    text-align: center;
+    width: 10%;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}       
+
+.formSection h5 {
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+.formSection h6 {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+td {
+    border-right: #2D3784 solid 1px;
+    text-align: center;
+}
+
+#year {
+    width: 10%;
+
+}
+
+#city {
+    width: 10%;
+}
+
+form {
+    position: relative;
+    margin: 0 auto;
+    top: 3em;
+}
+
+.formTitle {
+    font-size: 48px;
+    text-align: center;
+}
+
+
+#SAT, #ACT, #Both, #accepted, #waitlisted, #denied {
+    width: 3%;
+}
+
+#sat-english, #sat-math, #sat-essay, #act-composite, #act-english, #act-math, #act-reading, #act-science, #sat2-score {
+    width: 5%;
+}
+
+#sat2-subject {
+    width: 10%;
+}
+
+footer {
+    background-color: rgb(26, 26, 25);
+    text-align: center;
+    padding: 0.25%;
+    width: 100%;
+    color: white;
+}
+
+.construction {
+    text-align: center;
+}
+
+.constructSection {
+    position: relative;
+    top: 10em;
+}
+
+
+.constructSection img {
+    float: right;
+    width: 21%;
+}
+
+.successPage, .failurePage {
+    position: relative;
+    top: 18em;
+    margin: 0 auto;
+    margin-left: 10em;
+}
+
+.eta {
+    font-size: 20px;
+}
+
+.meet {
+    text-align: center;
+    font-size: 45px;
+}
+
+.shah img, .saljuk img {
+    width: 15em;
+    height: 15em;
+}
+
+.aboutSection {
+    width: 90%;
+    margin: 0 auto;
+    top: 7em;
+    position: relative;
+}
+
+.aboutSection .personText {
+    padding: 2em;
+    text-align: justify;
+}
+
+#saljukText {
+    text-align: right;
+}
+
+.plus, .minus {
+    font-size: 35px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 25, 0.2), 0 6px 20px 0 rgba(26, 26, 25, 0.19);
+}
+
+.plus:hover, .minus:hover {
+    color: rgb(42, 9, 158);
+    background-color: white;
+}
+
+.minus {
+    margin-left: 0.5em;
+    background-color: rgb(42, 9, 158);
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-bottom: 0.1em;
+    border-radius: 100%;
+}
+
+.plus {
+    background-color: rgb(42, 9, 158);
+    padding-left: 0.325em;
+    padding-right: 0.325em;
+    padding-bottom: 0.1em;
+    border-radius: 100%;
+}
+.uniListings {
+     width: 50%;
+}
+
+#unis-applied {
+    width: 75%;
+}
+
+.uniListings thead {
+    line-height: 50px;
+    background-color: #3767b0;
+    color: white;
+}
+
+
+.uniListings {
+    border: #3767b0 1px solid;
+    width: 75%;
+}
+
+.uniListings td {
+    border: none;
+}
+
+#numbercolleges {
+    width: 7em;
+}
+
+.formSection {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.note {
+    line-height: 1.7em;
+}
+
+#formlandingh1, #formlandingh2 {
+    border-radius: 40px;
+    padding: 0.5em;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(26, 26, 25, 0.2), 0 6px 20px 0 rgba(26, 26, 25, 0.19);
+}
+
+#formlandingh1 {
+    background-color: rgb(222, 67, 96)
+}
+
+#formlandingh2 {
+    text-align: right;
+    background-color: rgb(42, 9, 158);
+}
+
+.navbar .logo img {
+    width: 11%;
+    margin: 0;
+    border: 0;
+    padding: 1em 0em 1em 1em;
+}
