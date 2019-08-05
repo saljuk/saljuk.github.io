@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="phone.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px)" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144735539-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-144735539-1');
+    </script>
+    <title>Chart</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">
+            <a href="./index.html"><img src="./images/logo-nav.png"></a>
+        </span>
+        <span id="mobilebar">
+            <img src="images/menu.png">
+        </span>
+        <span class="links" id="menulinks">
+            <a href="./index.html" class="navbar-links" id="homelink">Home</a>
+            <a href="./about.html" class="navbar-links">About Us</a>
+            <a href="./construction.html" class="navbar-links" style="display: none">The Process</a>
+        </span>
+    </div>
+    <div class="chartpage">
+        <div class="searchbarchart" id="sidebarmenu">
+            <div class="selectgraphtype">
+                Select Graph to View
+                <label for="graphtype" class="graphtype">
+                    <select name="graphtype" class="typeofgraph" id="graphtypelist">
+                        <option value="SAT 1 Score Vs. O' Level GPA Comparison">SAT 1 Score Vs. O' Level GPA Comparison</option>
+                        <option value="SAT 1 Score Vs. A1/AS Level GPA Comparison">SAT 1 Score Vs. A1/AS Level GPA Comparison</option>
+                        <option value="ACT Score Vs. O' Level GPA Comparison">ACT Score Vs. O' Level GPA Comparison</option>
+                        <option value="ACT Score Vs. A1/AS Level GPA Comparison">ACT Score Vs. A1/AS Level GPA Comparison</option>      
+                    </select>
+                </label>
+            </div>
+            <div class="filters" id="filtermenu">
+                <h2 id="filtersgraphheading">Filters</h2>
+                <div class="filterheader">
+                    <h4 class="cityheader">City</h4>
+                    <div id="citycheckboxes"></div>
+                </div>
+                <div class="filterheader">
+                    <h4 class="schoolheader">High School</h4>
+                    <div id="schoolcheckboxes"></div>
+                </div>
+                <div class="filterheader">
+                    <h4 class="yeargraphheader">Year Applied</h4>
+                    <div id="yeargraphcheckboxes"></div>
+                </div>
+                <div class="filterheader" id="aidgraphfilter">
+                    <h4 class="aidgraphheader">Aid Requirement</h4>
+                    <div id="aidgraphcheckboxes"></div>
+                </div>
+                <div class="filterheader">
+                    <h4 class="citizengraphheader">Citizenship</h4>
+                    <div id="citizengraphcheckboxes"></div>
+                </div>
+                <div><br><br></div>
+            </div>
+        </div>
+    </div>
+    <div class="chart">
+        <div class="searchbarabovechart">
+            <label for="searchbar">
+                <input id="searchbar" name="searchbar" type="text" list="unis" placeholder="Enter University Name"
+                    required>
+                <datalist id="unis">
+                    <option value="Amherst College"></option>
+                    <option value="Babson College"></option>
+                    <option value="Bates College"></option>
+                    <option value="Bowdoin College"></option>
+                    <option value="Brown University"></option>
+                    <option value="Bryn Mawr College"></option>
+                    <option value="California Institute of Technology"></option>
+                    <option value="Carleton College"></option>
+                    <option value="Colby College"></option>
+                    <option value="Colgate University"></option>
+                    <option value="Columbia University"></option>
+                    <option value="Cornell University"></option>
+                    <option value="Dartmouth College"></option>
+                    <option value="Davidson College"></option>
+                    <option value="DePauw University"></option>
+                    <option value="Drexel University"></option>
+                    <option value="Duke University"></option>
+                    <option value="Emory University"></option>
+                    <option value="Franklin and Marshall College"></option>
+                    <option value="Georgetown University"></option>
+                    <option value="Georgia Institute of Technology"></option>
+                    <option value="Grinnell College"></option>
+                    <option value="Harvard University"></option>
+                    <option value="Johns Hopkins University"></option>
+                    <option value="Kenyon College"></option>
+                    <option value="Knox College"></option>
+                    <option value="Lafayette College"></option>
+                    <option value="Lahore University of Management Sciences (LUMS)"></option>
+                    <option value="Macalester College"></option>
+                    <option value="Massachusetts Institute of Technology"></option>
+                    <option value="Middlebury College"></option>
+                    <option value="Mount Holyoke College"></option>
+                    <option value="New York University Abu Dhabi Campus (NYUAD)"></option>
+                    <option value="New York University New York Campus (NYU)"></option>
+                    <option value="Northwestern University"></option>
+                    <option value="Oberlin College"></option>
+                    <option value="Pomona College"></option>
+                    <option value="Princeton University"></option>
+                    <option value="Rice University"></option>
+                    <option value="Stanford University"></option>
+                    <option value="Swarthmore College"></option>
+                    <option value="Tufts University"></option>
+                    <option value="University of California-Berkeley"></option>
+                    <option value="University of California-Los Angeles"></option>
+                    <option value="University of Chicago"></option>
+                    <option value="University of Michigan-Ann Arbor"></option>
+                    <option value="University of Pennsylvania"></option>
+                    <option value="Vanderbilt University"></option>
+                    <option value="Vassar College"></option>
+                    <option value="Washington and Lee University"></option>
+                    <option value="Wellesley College"></option>
+                    <option value="Wesleyan University"></option>
+                    <option value="Williams College"></option>
+                    <option value="Yale University"></option>
+                    <option value="Yale-NUS"></option>
+                </datalist>
+            </label>
+
+            <button id="searchBarButton">Search</button>
+        </div>
+        <div id="container"></div>
+        <div id="scatterchart_material"></div>
+    </div>
+    <img src="./Legend.png" id="chartlegend">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./progressbar.js"></script>
+    <script src="./chartscript.js"></script>
+</body>
+
+</html>

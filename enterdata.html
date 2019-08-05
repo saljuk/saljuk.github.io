@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="phone.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 992px)" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144735539-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-144735539-1');
+    </script>
+    <title>Create Your Profile</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">
+            <a href="./index.html"><img src="./images/logo-nav.png"></a>
+        </span>
+        <span id="mobilebar">
+            <img src="images/menu.png">
+        </span>
+        <span class="links" id="menulinks">
+            <a href="./index.html" class="navbar-links" id="homelink">Home</a>
+            <a href="./about.html" class="navbar-links">About Us</a>
+            <a href="./construction.html" class="navbar-links" style="display: none">The Process</a>
+        </span>
+    </div>
+    <h1 class="profileheader">Please enter your Profile Details</h1>
+    <div class="prospectiveapplicantprofile">
+        <br>
+        <div class="profilesectionheader">
+            <div class="labelheader" id="highschoolheader">
+                High School Transcript
+                <span class="sectionenlarge" id="highschoolsectionenlarge">+</span>
+            </div>
+            <div class="olevelgrades" id="olevelgrades">
+                <h4>Cambridge O'Level Grades</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>No. of A*s/As</td>
+                            <td>No. of Bs</td>
+                            <td>No. of Cs</td>
+                            <td>No. of Ds</td>
+                            <td>No. of Es</td>
+                            <td>No. of Us</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" name="olevelAs" id="olevelAs" min="0" placeholder="0"></td>
+                            <td><input type="number" name="olevelBs" id="olevelBs" min="0" value="0"></td>
+                            <td><input type="number" name="olevelCs" id="olevelCs" min="0" value="0"></td>
+                            <td><input type="number" name="olevelDs" id="olevelDs" min="0" value="0"></td>
+                            <td><input type="number" name="olevelEs" id="olevelEs" min="0" value="0"></td>
+                            <td><input type="number" name="olevelUs" id="olevelUs" min="0" value="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="a1grades" id="a1grades">
+                <h4>A1 Final Grades</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>No. of A*s/As</td>
+                            <td>No. of Bs</td>
+                            <td>No. of Cs</td>
+                            <td>No. of Ds</td>
+                            <td>No. of Es</td>
+                            <td>No. of Us</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" name="aslevelAs" id="aslevelAs" min="0" placeholder="0" required></td>
+                            <td><input type="number" name="aslevelBs" id="aslevelBs" min="0" value="0"></td>
+                            <td><input type="number" name="aslevelCs" id="aslevelCs" min="0" value="0"></td>
+                            <td><input type="number" name="aslevelDs" id="aslevelDs" min="0" value="0"></td>
+                            <td><input type="number" name="aslevelEs" id="aslevelEs" min="0" value="0"></td>
+                            <td><input type="number" name="aslevelUs" id="aslevelUs" min="0" value="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="profilesectionheader">
+            <div class="labelheader" id="standardisedtestingheader">
+                Standardised Testing
+                <span class="sectionenlarge" id="standardisedsectionenlarge">+</span>
+            </div>
+            <div class="satactorboth" id="satactorboth">
+                <p>Have you taken the SAT, the ACT or both?</p>
+                <label for="SAT">
+                    SAT
+                    <input id="SAT" name="satoract" type="radio" value="SAT">
+                </label>
+                <label for="ACT">
+                    ACT
+                    <input id="ACT" name="satoract" type="radio" value="ACT">
+                </label>
+                <label for="Both">
+                    Both
+                    <input id="Both" name="satoract" type="radio" value="Both">
+                </label>
+                <br>
+                <div id='satDetails'>
+                    <label for="sat-total">
+                        SAT 1 Total: 
+                        <input type="number" id="sat-total" name="sat-total" min="200" max="800" step="10">
+                    </label>
+                </div>
+
+                <div id='actDetails'>
+                    <label for="act-composite">
+                        ACT Composite:
+                        <input type="number" id="act-composite" name="act-composite" min="0" max="36">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <p class="search_next_button" id="gonexttochart">Next</p>
+
+
+
+    </div>
+    <script src="profilescript.js"></script>
+</body>
+
+</html>
